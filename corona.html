@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Reina</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #fff0f5, #e6ccff);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #8e44ad;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.4em;
+      color: #333;
+    }
+    .corona {
+      font-size: 5em;
+      color: gold;
+      margin: 20px;
+      animation: brillar 2s infinite alternate;
+    }
+    .mensaje {
+      background: #ffffffcc;
+      border-radius: 15px;
+      padding: 25px;
+      display: inline-block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    /* Animación para las coronitas */
+    @keyframes brillar {
+      from { transform: scale(1); color: gold; }
+      to { transform: scale(1.2); color: #ffd700; }
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #732d91;
+    }
+  </style>
+</head>
+<body>
+  <div class="corona">👑</div>
+  <div class="mensaje">
+    <h1>Mi Reina 👑</h1>
+    <p>Anita :D, hoy quiero recordarte algo simple:<br>
+    eres la reina de mi corazón.<br>
+    De poco en poco estaremos construyendo nuestro castillo :3,<br>
+    porque contigo ya tengo todo lo que soñé.<br>
+    Feliz día de las coronitas, espero que te haya gustado :D ❤</p>
+  </div>
+  <div class="corona">👑</div>
+
+  <!-- Botón para reproducir música -->
+  <button onclick="document.getElementById('musica').play()">🎶 Presiona Aquí :* :d</button>
+
+  <!-- Audio -->
+  <audio id="musica" loop>
+    <source src="Los Cafres - Tus ojos.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+</body>
+</html>
